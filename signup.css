@@ -1,0 +1,110 @@
+.form-container {
+  border-radius: 20px;
+  height: 730px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#signin {
+  background: #0984e3;
+  width: 100%;
+  text-align: center;
+  height: 130px;
+  border-radius: 20px 20px 0px 0px;
+  vertical-align: middle;
+  line-height: 130px;
+  font-weight: bold;
+  font-size: 1.9rem;
+  color: white;
+}
+
+#form-div {
+  padding: 30px 40px 0px 40px;
+  height: 80%;
+}
+
+#txtEmail,
+#txtName,
+#txtPassword,
+#txtRetypePassword {
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 25px 20px;
+  width: 95%;
+  box-shadow: none;
+  transition: all 0.5s ease;
+  background: #ebebeb;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+#txtEmail:focus,
+#txtPassword:focus,
+#txtName:focus,
+#txtRetypePassword:focus {
+  width: 100%;
+  background-color: #0984e3;
+  border: 1px solid #0984e3;
+  color: white;
+}
+
+#txtEmail:focus::placeholder,
+#txtPassword:focus::placeholder,
+#txtName:focus::placeholder,
+#txtRetypePassword:focus::placeholder {
+  color: white;
+}
+
+#lblPassword,
+#lblEmail {
+  margin-top: 0px;
+  margin-left: 25px;
+  color: #888;
+}
+
+.custom-control {
+  margin-left: 25px;
+  color: #888;
+}
+#customCheck {
+  box-shadow: none;
+}
+
+#btnSubmit {
+  width: 95%;
+  margin: 30px auto;
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: #0984e3;
+  font-weight: bold;
+}
+#btnSubmit:hover {
+  box-shadow: 2px 3px 5px 1px rgba(14, 14, 87, 0.3);
+}
+
+.signup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 20px;
+  color: #888;
+}
+
+.signup a {
+  font-size: 15px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+.signup a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}

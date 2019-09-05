@@ -1,0 +1,240 @@
+body {
+    color: #2d3436;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+}
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar-nav li {
+    padding: 0 0.3rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3436;
+    padding-top: 0.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link:active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0984e3;
+}
+
+.nav-item .btn-outline-primary {
+    border: 1px solid #0984e3;
+    color: #0984e3;
+    transition: background 0.2s ease;
+}
+
+.nav-item .btn-outline-primary:hover {
+    background-color: #0984e3;
+    border: 1px solid #0984e3;
+    color: white;
+}
+.nav-item img{
+    border-radius: 100px;
+}
+
+#categoryList .col {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+    border: 0px;
+
+}
+
+#categoryList button {
+    color: white;
+    background-color: #f2f5f9;
+    width: 100%;
+    margin: 0;
+    border: 0px;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    padding: 15px 10px;
+    border-bottom: 1px solid #aaaaaa;
+    border-radius: 0px;
+    color: #333;
+    transition: background 0.2s ease-in;
+
+}
+
+#categoryList button:hover,
+#categoryList button:active {
+    color: white;
+    background-color: #0984e3;
+    border-bottom: 1px solid #0972e3;
+    width: 100%;
+    margin: 0;
+
+}
+
+
+
+.card {
+    margin: 0;
+    /* Added */
+    float: none;
+    /* Added */
+    margin-bottom: 20px;
+    /* Added */
+    height: 350px;
+    overflow: hidden;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    filter: drop-shadow(0px 0px 11px rgba(9,132,227, .2));
+}
+
+
+
+
+.card img {
+    position: relative;
+    top: -20px;
+
+}
+
+.card-body {
+    bottom: 0;
+    background-color: #f2f5f9;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#postCards .col-sm-4 {
+    padding: 0 10px;
+}
+
+#postCards {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    background-color: #0984e3;
+}
+
+
+.center {
+    height: 500px;
+    position: relative;
+}
+
+.center div {
+    color: #ddd;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center h1 {
+    color: white;
+    text-decoration: none;
+}
+
+.consistent {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/*Model start*/
+.modal.custom .modal-dialog {
+    width:50%;
+    margin:0 auto;
+    /*add what you want here*/
+}
+/*Model end*/
+
+
+/*Tags Start*/
+
+
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 10px;
+}
+ul.ks-cboxtags li{
+  display: inline;
+}
+ul.ks-cboxtags li label{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #1bdbf8;
+    background-color: #12bbd4;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  border: 2px solid #e9a1ff;
+}
+/*Tags End*/

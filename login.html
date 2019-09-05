@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="login.css" rel="stylesheet" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid center">
+      <div class="row justify-content-center">
+        <div class="col-5">
+          <form class="form-container shadow">
+            <label id="signin">Sign In</label>
+            <div id="form-div">
+              <div class="form-group">
+                <label for="email" id="lblEmail">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="txtEmail"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password" id="lblPassword">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="txtPassword"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <div class="custom-control custom-checkbox mb-3">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customCheck"
+                  name="example1"
+                />
+                <label class="custom-control-label" for="customCheck"
+                  >Remember Password?</label
+                >
+              </div>
+
+              <input
+                type="button"
+                class="btn btn-primary btn-block"
+                id="btnSubmit"
+                value="Sign In"
+              />
+              <div class="text-center signup">
+                <label>Don’t have an account?</label><br />
+                <a href="signup.html">Sign Up Now</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
